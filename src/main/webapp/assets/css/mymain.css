@@ -1,0 +1,158 @@
+/* * {
+    margin: 0 auto;
+    padding: 0px;
+    border: 2px solid #8060dd
+} */
+
+
+
+/************ navbar css *****************/
+#nav {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+
+}
+
+/* background-color: transparent; */
+
+
+
+.narbar_background_color {
+    background-color: #ecb21f;
+    opacity: 0.9;
+    /* rgb(240, 225, 173); */
+    /* background-color: transparent;*/
+}
+
+
+.narbar_text_color {
+    font-size: 20px !important;
+    font-weight: bolder !important;
+    color: rgb(94, 57, 19) !important;
+}
+
+
+.dropdown-menu {
+    background-color: rgb(236, 178, 31) !important;
+    border: none !important;
+    /* background-color: transparent; */
+}
+
+
+/*********************** topic *************************/
+.article1 {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 0px;
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+#topic {
+    background-image: url(../../images/letters.jpg);
+}
+
+#topic #topicSpace {
+    height: 50vh;
+}
+
+#topic #topicContent {
+    /* border: 3px solid blue; */
+    color: #ecb21f;
+    font-weight: 900;
+    font-size: 70px;
+    text-align: center;
+}
+
+/* letter_animation */
+
+#letter_animation {
+    background-color: rgb(94, 57, 19, 0.7);
+}
+
+
+
+#index_letter_container,
+#index_letter_submit {
+    margin: 25px auto;
+    text-align: centercenter;
+
+}
+
+#letterSpace {
+    height: 50vh;
+}
+
+
+
+
+
+
+#work {
+    padding: 5em 0 5em 0;
+    text-align: center;
+}
+
+.wrapper {
+    background-image: url("images/bg.png");
+    padding:8em 0;
+/*     置中元凶 */
+    text-align: center;
+}
+
+.wrapper.style2 {
+    background-color: #fafafa;
+    text-shadow: 1px 1px 0px #fff;
+}
+
+.wrapper.style3 {
+    background-color: #f4f4f4;
+    text-shadow: 1px 1px 0px #fff;
+}
+
+/********************** Box ***********************/
+.box {
+    background: #fff;
+    box-shadow: inset 0px 0px 0px 1px rgb(0 0 0 / 15%), 0px 2px 3px 0px rgb(0 0 0 / 10%);
+    text-align: center;
+    padding: 2em;
+}
+
+.box {
+    padding: 30px 20px 30px 20px;
+    margin: 0 0 20px 0 !important;
+}
+
+.box h3 {
+    margin-bottom: 0.25em;
+}
+
+.box.style1 {
+    max-width: 32em;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.box.style1 {
+    padding: 3em 2em 3.5em 2em;
+}
+
+.box.style2 {
+    max-width: 32em;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.box.style1 h3 {
+    margin-bottom: 0.5em;
+}
+
+.box.style2 h3 {
+    margin-bottom: 0.25em;
+}
