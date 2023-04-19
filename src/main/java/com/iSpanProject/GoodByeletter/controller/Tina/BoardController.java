@@ -162,7 +162,7 @@ public class BoardController {
 		
 	}
 	
-	//儲存創建時間//謝謝右昕!
+	//儲存創建時間
 		@InitBinder
 		 public void initBinder(WebDataBinder binder, WebRequest request) {
 		  // java.util.Date
