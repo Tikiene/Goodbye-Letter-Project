@@ -457,7 +457,7 @@
 
                                 //WebSocket连接对象
 
-                                //判断当前浏览器是否支持WebSocket
+                                //判斷瀏覽器是否有websocket
                                 if (!('WebSocket' in window)) {
                                     alert('Not support websocket');
                                 }
@@ -467,10 +467,10 @@
 
                                 //傳出去給ChatEndpoint的userName
                                 userName = "${existing.account}";
-                                //创建WebSocket连接对象
+                                ///ws連接訊息
                                 ws = new WebSocket(prefixUrl + userName);
 
-                                //连接成功建立的回调方法
+                                 //連接成功
                                 ws.onopen = function (event) {
                                     console.log('建立连接:' + ws);
                                     var str = '<a class="btn btn-xs btn-secondary" href="#" data-abc="true" style=" color: #4d5259;">' + userName + '在線上' + '</a>';
@@ -561,14 +561,14 @@
                                 }
 
 
-                                //连接发生错误的回调方法
+                              //發生錯誤
                                 ws.onerror = function (event) {
                                     var str = '<a class="btn btn-xs btn-secondary" href="#" data-abc="true" style="color:red">發生錯誤</a>';
                                     $('#card-header-btn').html(str);
                                     console.log('发生错误');
                                 }
 
-                                //连接关闭的回调方法
+                              //連接關閉
                                 ws.onclose = function (event) {
                                     var str = '<a class="btn btn-xs btn-secondary" href="#" data-abc="true" style="color:red">斷線了</a>';
                                     $('#card-header-btn').html(str);
@@ -592,26 +592,26 @@
 
                                 })*/
 
-                                //发送消息
+                                 //送訊息
                                 function sendMessage(message) {
                                     ws.send(message);
 
 
                                 }
 
-                                //关闭连接
+                                 //關閉連接
                                 function closeWebSocket() {
                                     ws.close();
                                     $("#showToName").html("連線有誤!");
                                 }
 
-                                //监听窗口关闭事件，当窗口关闭时，主动去关闭websocket连接，防止连接还没断开就关闭窗口，server端会抛异常。
+                                  //監聽關閉事件，當視窗關閉時，主動去關閉websocket連接，否則server會拋出異常  
                                 window.onbeforeunload = function () {
                                     wx.close();
                                     $("#showToName").html("連線有誤!");
                                 }
 
-                                //发送消息
+                              //發送訊息
                                 $('#btn_send')
                                     .click(
                                         function () {
@@ -659,10 +659,7 @@
                                 })
 
 
-                                //点击退出聊天室
-                                //$('#btn_exit').click(function () {
-                                //closeWebSocket();
-                                //})
+                            
                             })
                         </script>
                 </body>
